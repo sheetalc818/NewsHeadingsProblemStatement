@@ -44,8 +44,8 @@ public class SpotifyRestAssured {
 
 //------------------------------------------------------------
         JSONObject playListData = new JSONObject();
-        playListData.put("name", "Avinash --Laxman Playlist");
-        playListData.put("description", "Laxman Favorite songs");
+        playListData.put("name", "Testing Playlist");
+        playListData.put("description", "Sheetal's Favorite songs");
         playListData.put("public", false);
         RestAssured.given()
                 .accept("application/json")
@@ -61,8 +61,8 @@ public class SpotifyRestAssured {
         //  https://api.spotify.com/v1/users/{user_id}/playlists
 
         JSONObject newPlayListData = new JSONObject();
-        newPlayListData.put("name", "Avinash --Laxman Playlist");
-        newPlayListData.put("description", "Laxman Favorite songs");
+        newPlayListData.put("name", "Testing Playlist");
+        newPlayListData.put("description", "Sheetal's Favorite songs");
         newPlayListData.put("public", false);
 
         Response newResponse=RestAssured.given().
